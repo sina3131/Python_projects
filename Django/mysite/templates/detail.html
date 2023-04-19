@@ -1,0 +1,38 @@
+
+
+
+{% block page_content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-black">
+    <h1 class="text-gray-500  pl-96 mt-24 ml-96 text-4xl ">{{ project.title }}</h1>
+<div class="row ">
+    <div class="col-md-8  pl-96 pt-10 ">
+        <img class="rounded-xl h-2/4 w-3/4" src="{{ MEDIA_URL }}{{ project.image.url }}" alt="" width="40%" height="40%">
+    </div>
+    <div class="col-md-4">
+        <h5>About the project:</h5>
+        <p class="text-gray-500 pl-96 pr-96">{{ project.description }}</p>
+        <br>
+        <p  class="text-gray-500 pl-96">{{ project.technology }}</p>
+        <a href="https://github.com/sina3131">
+        <h5 class="text-blue-400 pl-96">Source code link </h5>
+    </a>
+    </div>
+</div>
+    
+</body>
+
+{% endblock %}
+
+
+
+

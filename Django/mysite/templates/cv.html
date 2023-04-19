@@ -1,0 +1,202 @@
+
+{% load static %}
+{% block page_content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #161414;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+     .button {
+    border-width: 10;
+    border-color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+    </style>
+  </head>
+<body class="w3-black">
+
+  <input type="submit" onClick="myFunction()" value="HOME" class="button" />
+  <script>
+    function myFunction() {
+      window.location.href = "project.html";
+    }
+  </script>
+
+
+
+
+
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+ 
+  <img src="https://wallpaperaccess.com/full/5757474.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>projects</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-laptop w3-xxlarge"></i>
+    <p>Preject-description</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#Projects" class="w3-bar-item w3-button" style="width:25% !important">Projects</a>
+    <a href="#Project-description" class="w3-bar-item w3-button" style="width:25% !important">Project-description</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sina.</h1>
+    <p>PYthon AI/ML.</p>
+    <img src="https://wallpaperaccess.com/full/1398439.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <a href="https://github.com/sina3131/linux_device" class="no-underline" >
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey no" class="no-underline"> Project one</h2></a>
+    <hr style="width:200px" class="w3-opacity" class="no-underline">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam perferendis repellendus, non in beatae ipsam recusandae maiores labore molestias pariatur ut dolorum earum expedita animi ducimus voluptatum delectus reiciendis quae.
+    </p>
+  <a href="https://github.com/sina3131/Cyber">
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">project two</h2></a>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+    <a href="https://github.com/sina3131/ete352_threatdragon_exempelsystem ">
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">project three</h2></a>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+
+    <div class="row">
+      <h1 class=" w3-text-grey">Other projects</h1>
+ 
+
+
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+    <p class="w3-wide">AI</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+    <p class="w3-wide">Sql</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+  
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1+</span><br>
+        Years of Experience
+      </div>
+      <div class="w3-quarter w3-section">
+       
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+  </div> 
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact information</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Stockhom </p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0709135467</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: sina@mail.com</p>
+    </div><br>
+
+    <h2>Let's get in touch. Send me a message</h2>
+
+  
+<a  href="/contact/">
+  <h4>Link for sending email</h4>
+</a>
+  
+
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <a href="https://www.linkedin.com/in/alisina-faramarzi-057ba4210/">
+  <i class="fa fa-facebook-official w3-hover-opacity"> </i></a>
+
+  <a href="https://github.com/sina3131">
+  <i class="fa fa-github w3-hover-opacity"></i></a>
+
+  <a href="https://www.linkedin.com/in/alisina-faramarzi-057ba4210/">
+  <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+
+  <a href="https://www.linkedin.com/in/alisina-faramarzi-057ba4210/">
+  <i class="fa fa-twitter w3-hover-opacity"></i></a> 
+
+  <a href="https://www.linkedin.com/in/alisina-faramarzi-057ba4210/">
+  <i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+</footer>
+
+
+</div>
+
+</body>
+</html>
+{% endblock %}
